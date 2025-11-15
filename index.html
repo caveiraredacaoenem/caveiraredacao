@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Página de Vendas de Alta Conversão para o produto "+900 na redação SEM estudar".
+    Identidade visual: Fundo Escuro (Quase Preto) e Destaque Roxo (#8c52ff).
+    Estrutura responsiva com Tailwind CSS.
+-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Configuração do Tailwind CSS para cores personalizadas -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'primary-cta': '#8c52ff',    // Cor principal (Roxo) para o CTA e detalhes
+                    'dark-bg': '#111827',        // Cor de fundo escura (Quase preto)
+                    'light-bg': '#F9FAFB',       // Cor de fundo clara (para contraste)
+                    'accent-purple': '#8c52ff',  // Alias para a cor principal
+                },
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    /* Estilo para animação de pulso no botão CTA, usando a cor roxa da identidade */
+    @keyframes pulse-purple {
+        0%, 100% {
+            opacity: 1;
+            box-shadow: 0 0 0 0 rgba(140, 82, 255, 0.7); /* Cor do pulso: #8c52ff */
+        }
+        50% {
+            opacity: 0.8;
+            box-shadow: 0 0 0 15px rgba(140, 82, 255, 0);
+        }
+    }
+
+    .animate-pulse-custom {
+        animation: pulse-purple 2s infinite;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+900 na Redação SEM Estudar - Caveira Redação</title>
+</head>
+
+<body class="font-sans text-gray-800">
+
+    <!-- 1. CABEÇALHO / HERO SECTION (CTA Principal) - Fundo Escuro -->
+    <header class="bg-dark-bg py-16 sm:py-24 border-b border-accent-purple text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Placeholder para Logo da Empresa -->
+            <img src="./logo.png" alt="Logo da Caveira Redação" class="mx-auto mb-8 h-28 w-28 rounded-full object-cover border-2 border-white p-1">
+            
+            <!-- Título: +900 na redação SEM estudar -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                <span class="text-accent-purple">+900 na redação</span> SEM estudar
+            </h1>
+
+            <!-- Subtítulo: Proposta de Valor Clara -->
+            <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+                Sem enrolação. A fórmula pronta e testada que te leva à nota máxima, mesmo que você odeie aulas chatas.
+            </p>
+
+            <!-- Chamada para Ação Principal -->
+            <div class="mt-8">
+                <a href="https://pay.cakto.com.br/38zjkk4_650166" class="inline-block px-12 py-4 text-lg font-bold text-white bg-accent-purple rounded-lg shadow-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105">
+                    GARANTA SEU +900 AGORA!
+                </a>
+            </div>
+
+           <!-- Vídeo de Apoio - Visual do Produto/Serviço -->
+<div class="mt-12">
+    <iframe 
+        class="mx-auto rounded-xl shadow-2xl border-4 border-gray-700"
+        width="800" 
+        height="450"
+        src="https://www.youtube.com/embed/0P2mGfKk8bw" 
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+        </div>
+    </header>
+
+    <!-- 2. PROBLEMA E SOLUÇÃO (Redesign Moderno - Fundo Escuro com Cards de Contraste) -->
+    <section class="py-16 bg-dark-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-start">
+                
+                <!-- Coluna do Problema (Dor) - Card Escuro (O que você vai EVITAR) -->
+                <div class="p-8 bg-gray-900 rounded-xl shadow-2xl border-2 border-red-600/50 transform transition duration-500 hover:scale-[1.01]">
+                    <h2 class="text-3xl font-extrabold text-red-400 mb-6 text-center">
+                        Chega de Perder Tempo Com...
+                    </h2>
+                    <ul class="space-y-4 text-xl text-gray-300">
+                        <li class="flex items-start">
+                            <!-- Ícone de Negativo -->
+                            <svg class="flex-shrink-0 h-8 w-8 text-red-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3">Passar horas estudando regras gramaticais chatas e complexas?</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-8 w-8 text-red-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3">Começar a redação do zero toda vez, sem uma estrutura garantida?</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-8 w-8 text-red-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3">Ficar preso(a) nas notas 600-700 e não saber o que falta para o +900?</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna da Solução (Alívio - Destaque Roxo) - Card de Solução Premium -->
+                <div class="mt-10 lg:mt-0 p-8 bg-accent-purple text-white rounded-xl shadow-2xl border-2 border-white transform transition duration-500 hover:scale-[1.01]">
+                    <h2 class="text-3xl font-extrabold text-white mb-6 text-center">
+                        Conquiste o +900 com o Caveira Redação!
+                    </h2>
+                    <ul class="space-y-4 text-xl font-medium">
+                        <li class="flex items-start">
+                            <!-- Ícone de Positivo -->
+                            <svg class="flex-shrink-0 h-8 w-8 text-white mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3 font-bold">Sem Enrolação:</span> Foco no que realmente dá nota e nada mais.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-8 w-8 text-white mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3">Fórmula Pronta Testada:</span> Estruturas que já geraram milhares de notas altas.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-8 w-8 text-white mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="ml-3">Conteúdo Sem Aulas Chata:</span> Direto ao ponto e fácil de absorver.
+                        </li>
+                    </ul>
+                    <div class="mt-8 text-center">
+                        <!-- CTA Invertido para Destaque Máximo -->
+                        <a href="https://pay.cakto.com.br/38zjkk4_650166" class="inline-block px-8 py-3 text-lg font-semibold text-accent-purple bg-white rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                            EU QUERO MINHA FÓRMULA!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. RECURSOS E BENEFÍCIOS (O que está incluso - Fundo Escuro) -->
+    <section class="py-16 bg-dark-bg text-white border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-12">
+                O Pacote +900 na Redação Inclui:
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Benefício/Recurso 1: Sem Enrolação -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 border-accent-purple">
+                    <!-- NOVO PLACEHOLDER PARA IMAGEM -->
+                    <img src="./check.svg" alt="Ícone Sem Enrolação" class="h-10 w-10 mx-auto mb-4 object-cover rounded-full">
+                    <h3 class="text-xl font-bold text-white mb-2">Sem Enrolação</h3>
+                    <p class="text-gray-400">Conteúdo 100% focado no que a banca avaliadora realmente quer, economizando seu tempo.</p>
+                </div>
+
+                <!-- Benefício/Recurso 2: Conteúdos de redação sem aulas chatas -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 border-accent-purple">
+                    <!-- NOVO PLACEHOLDER PARA IMAGEM -->
+                    <img src="./airplay.svg" alt="Ícone Aulas Sem Chatice" class="h-10 w-10 mx-auto mb-4 object-cover rounded-full">
+                    <h3 class="text-xl font-bold text-white mb-2">Aulas Sem Chatice</h3>
+                    <p class="text-gray-400">Aprenda a fórmula de forma leve e divertida, absorvendo o essencial sem estresse.</p>
+                </div>
+
+                <!-- Benefício/Recurso 3: Mapa mental incrível -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 border-accent-purple">
+                    <!-- NOVO PLACEHOLDER PARA IMAGEM -->
+                    <img src="./bookmark.svg" alt="Ícone Mapa Mental" class="h-10 w-10 mx-auto mb-4 object-cover rounded-full">
+                    <h3 class="text-xl font-bold text-white mb-2">Mapa Mental Incrível</h3>
+                    <p class="text-gray-400">Recurso visual completo para memorizar o conteúdo de forma rápida e eficiente.</p>
+                </div>
+                
+                <!-- Benefício/Recurso 4: Fórmula pronta testada e comprovada -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 border-accent-purple">
+                    <!-- NOVO PLACEHOLDER PARA IMAGEM -->
+                    <img src="./align-center.svg" alt="Ícone Fórmula Pronta" class="h-10 w-10 mx-auto mb-4 object-cover rounded-full">
+                    <h3 class="text-xl font-bold text-white mb-2">Fórmula Pronta</h3>
+                    <p class="text-gray-400">Esqueça o branco! Basta encaixar a estrutura e garantir sua nota alta em qualquer tema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROVA SOCIAL (Depoimentos - Fundo Roxo) -->
+    <section class="py-16 bg-accent-purple text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-12">
+                Eles Já Conquistaram o +900!
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-dark-bg text-gray-800">
+                    <p class="italic text-lg">
+                        "Eu estava com pavor da redação, mas o material do Caveira Redação é genial. Apliquei a fórmula e saltei de 640 para <span class="font-bold text-accent-purple">920 em um mês</span>. Sem estudar gramática, é surreal!"
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img class="h-12 w-12 rounded-full object-cover shadow-md" src="https://placehold.co/50x50/111827/FFFFFF?text=M.S." alt="Foto de Mariana S.">
+                        <div class="ml-4">
+                            <p class="text-sm font-bold text-gray-900">Mariana S.</p>
+                            <p class="text-xs text-gray-500">Vestibulanda de Medicina</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-dark-bg text-gray-800">
+                    <p class="italic text-lg">
+                        "Simplesmente incrível! Eu tentava de tudo, mas só consegui a consistência de nota alta com o mapa mental. É o atalho que todo mundo esconde. Minha nota foi <span class="font-bold text-accent-purple">960!</span>"
+                    </p>
+                    <div class="mt-4 flex items-center">
+                        <img class="h-12 w-12 rounded-full object-cover shadow-md" src="https://placehold.co/50x50/111827/FFFFFF?text=L.P." alt="Foto de Lucas P.">
+                        <div class="ml-4">
+                            <p class="text-sm font-bold text-gray-900">Lucas P.</p>
+                            <p class="text-xs text-gray-500">Concurseiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. OFERTA E GARANTIA (CTA Final - Fundo Escuro) -->
+    <section id="oferta" class="py-20 bg-dark-bg text-white border-t border-gray-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-4 text-white">
+                A Fórmula Pronta para o Seu +900 na Redação.
+            </h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Preço de lançamento por tempo limitado. Garanta a sua vaga antes que o valor suba.
+            </p>
+
+            <!-- Card de Preço ATUALIZADO -->
+            <div class="bg-white text-gray-900 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 border-4 border-accent-purple mx-auto max-w-sm">
+                
+                <!-- Novo Texto de Acesso -->
+                <p class="text-xl font-bold text-gray-700">Acesso por:</p>
+                
+                <!-- Preço Principal: R$ 14,99 à vista -->
+                <p class="text-5xl font-extrabold mt-2 text-accent-purple">
+                    R$ 14,99 à vista
+                </p>
+                
+                <!-- Parcelamento: 3x de R$ 5,69 -->
+                <p class="mt-4 text-2xl font-bold text-gray-700">Em até 3 X de R$ 5,69</p>
+
+                <!-- CTA Final com Efeito de Pulso (Cor roxa) -->
+                <a href="https://pay.cakto.com.br/38zjkk4_650166" class="mt-6 w-full block px-8 py-4 text-xl font-bold text-white bg-accent-purple rounded-lg shadow-xl hover:bg-purple-700 transition duration-300 animate-pulse-custom">
+                    COMPRAR AGORA E RECEBER O ACESSO IMEDIATO
+                </a>
+            </div>
+
+            <!-- Garantia de Satisfação -->
+            <div class="mt-10 p-4 bg-gray-700 rounded-lg text-center">
+                <svg class="h-8 w-8 text-yellow-400 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002 12c0 2.76.71 5.35 2.005 7.644.026.046.052.09.08.134.028.044.057.087.087.13a.997.997 0 001.076.014c.058-.04.113-.08.17-.123C6.71 19.82 9.24 20.91 12 20.91s5.29-1.09 7.672-3.007c.057.043.112.083.17.123.366.257.77.387 1.144.387.41 0 .807-.156 1.11-.476.107-.107.207-.22.296-.345.089-.125.17-.258.24-.395.07-.137.13-.277.18-.42.05-.143.08-.29.08-.445V12a12.001 12.001 0 00-2-9.697z"></path></svg>
+                <span class="font-bold text-lg">GARANTIA INCONDICIONAL DE 7 DIAS.</span>
+                <p class="text-sm mt-1 text-gray-300">Sua compra é totalmente segura. Se você não ficar satisfeito, devolvemos 100% do seu dinheiro, sem burocracia ou perguntas.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. RODAPÉ - Fundo Bem Escuro -->
+    <footer class="py-6 bg-gray-900 text-sm text-gray-400 border-t border-accent-purple">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Caveira Redação. Todos os direitos reservados.</p>
+            <p class="mt-2 space-x-4">
+                <a href="#" class="hover:text-accent-purple transition duration-300">Termos de Uso</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-accent-purple transition duration-300">Política de Privacidade</a>
+            </p>
+            <p class="mt-2 text-xs text-gray-500">Aviso Legal: Os resultados podem variar de pessoa para pessoa. Este site não garante a obtenção de resultados específicos.</p>
+        </div>
+    </footer>
+
+</body>
